@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.App{
+  /* background-color: rgba(var(--b3f,250,250,250),1); */
+ 
+  /* background-color: #fafafa; */
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family:  'Roboto', sans-serif;;
+  font-weight: 500;
+}
+/* body{
+  background-image: linear-gradient(
+    45deg,#efefef 25%,rgba(239,239,239,0) 25%,rgba(239,239,239,0) 75%,#efefef 75%,#efefef),linear-gradient(
+    45deg,#efefef 25%,rgba(239,239,239,0) 25%,rgba(239,239,239,0) 75%,#efefef 75%,#efefef);;
+} */
+.post__box{
+  max-width: 500px;
+  
+}
+.post__img{
+  width: 100%;
+  object-fit: contain;
+ 
+}
+.post__container{
+  overflow: scroll;
+}
+.my_header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.post__container::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Hide scrollbar for IE, Edge and Firefox */
+.post__container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heart{
+  font-size: 30px;
+}
+.navclr{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.comment__box{
+  overflow-y: scroll;
+}
+.status_bar{
   display: flex;
+  flex: 0.4;
+  position: sticky;
+  top: 0%;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ justify-content: flex-start;
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  
 }
-
-.App-link {
-  color: #61dafb;
+.status_img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  margin-top: 20px;
+  color: whitesmoke;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.each_status{
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 20px;
+  color: whitesmoke;
+}
+.each_status:hover{
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+.split_div{
+  display: flex;
+  flex-direction: row;
+}
+.home__container{
+  flex: 1;
 }
